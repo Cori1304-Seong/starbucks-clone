@@ -149,6 +149,19 @@
 
 /* Mobile styles */
 @media (max-width: 767px) {
+  .collapse-btn {
+    display: none;
+  }
+  .nav-logo {
+    display: none;
+  }
+  .nav-menu {
+    /* 기존 스타일 */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
   .nav-item {
     flex-direction: column;
     padding: 8px 0;

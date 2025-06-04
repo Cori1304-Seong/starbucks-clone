@@ -46,6 +46,7 @@ const Navigation = () => {
           ))}
         </div>
 
+        {/* 화면 사이즈 sm이면 버튼 사라짐 */}
         <button
           className="collapse-btn"
           onClick={toggleCollapse}
