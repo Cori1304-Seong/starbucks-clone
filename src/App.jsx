@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Pay from "./pages/Pay";
 import Order from "./pages/Order";
 import Other from "./pages/Other";
+import Login from "./pages/Login";
 
 import "./App.css";
 
@@ -18,6 +19,8 @@ function App() {
           <Route path="/pay" element={<Pay />} />
           <Route path="/order" element={<Order />} />
           <Route path="/other" element={<Other />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </main>
     </div>
