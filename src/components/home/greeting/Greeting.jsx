@@ -3,11 +3,11 @@ import { CommonBtn } from "../../common/customBtn";
 import { CommonText } from "../../common/customText";
 import { CommonBtnGroup } from "../../common/BtnGroup";
 
-function Greeting() {
+function Greeting({ className = "" }) {
   const navigate = useNavigate();
 
   return (
-    <section className="pt-5 pb-4 px-7 bg-[bg-app]">
+    <section className={`pt-5 pb-4 px-7 ${className}`}>
       <CommonText fontSize="text-xl" bold>
         스타벅스에 오신것을 환영합니다!
       </CommonText>
