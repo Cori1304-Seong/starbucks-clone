@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import Pay from "./pages/Pay";
 import Order from "./pages/Order";
 import Other from "./pages/Other";
-import "./styles/Navigation.css";
+
+import "./App.css";
 
 function App() {
   return (
