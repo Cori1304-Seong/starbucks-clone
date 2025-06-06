@@ -8,7 +8,8 @@ import {
   FaAngleLeft,
   FaAngleRight,
 } from "react-icons/fa";
-import "../styles/Navigation.css";
+
+import "./styles/Navigation.css";
 
 const Navigation = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
