@@ -6,6 +6,7 @@ import Pay from "./pages/Pay";
 import Order from "./pages/Order";
 import Other from "./pages/Other";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 import "./App.css";
 
