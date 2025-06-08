@@ -1,16 +1,10 @@
 import { CommonText } from "../common/customText";
-import logo from "../../assets/logo.svg";
+import Logo from "../common/Logo";
 
 function Greeting({ className = "" }) {
   return (
     <section className={`w-full ${className}`}>
-      <div className="w-24 h-24 rounded-full flex items-center justify-center">
-        <img
-          src={logo}
-          alt="Starbucks Logo"
-          className="w-full h-full object-cover "
-        />
-      </div>
+      <Logo className="mb-4" />
 
       <CommonText fontSize="text-2xl" bold>
         안녕하세요.
