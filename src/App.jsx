@@ -11,21 +11,21 @@ import Signup from './pages/Signup';
 import './App.css';
 
 function App() {
-  return (
-    <div className="app">
-      <Navigation />
-      <main className="page-container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/pay" element={<Pay />} />
-          <Route path="/order" element={<Order />} />
-          <Route path="/other" element={<Other />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-        </Routes>
-      </main>
-    </div>
-  );
+    return (
+        <div className="app">
+            <Navigation />
+            <main className="page-container">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/pay" element={<Pay />} />
+                    <Route path="/order" element={<Order />} />
+                    <Route path="/other" element={<Other />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<Signup />} />
+                </Routes>
+            </main>
+        </div>
+    );
 }
 
 export default App;
