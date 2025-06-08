@@ -1,6 +1,6 @@
 export function CommonDivider({
-  color = "gray-300", // 기본 색상 (#d1d5db)
-  text = "",
+  color = 'gray-300', // 기본 색상 (#d1d5db)
+  text = '',
   thickness = 1,
   shadow = false,
 }) {
@@ -9,7 +9,7 @@ export function CommonDivider({
       <div
         className="flex items-center mb-6"
         style={{
-          boxShadow: shadow ? "0 2px 4px -1px rgba(0,0,0,0.1)" : "none",
+          boxShadow: shadow ? '0 2px 4px -1px rgba(0,0,0,0.1)' : 'none',
         }}
       >
         <div

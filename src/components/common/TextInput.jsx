@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 export function CommonTextInput({
-  type = "text",
-  placeholder = "",
-  className = "",
-  containerClassName = "",
-  inputColor = "#000000",
-  focusColor = "#22c55e",
-  errorColor = "#ef4444",
+  type = 'text',
+  placeholder = '',
+  className = '',
+  containerClassName = '',
+  inputColor = '#000000',
+  focusColor = '#22c55e',
+  errorColor = '#ef4444',
   hasError = false,
   onChange = () => {},
-  value = "",
+  value = '',
   maxLength = 25,
 }) {
   const [isFocused, setIsFocused] = useState(false);
@@ -28,10 +28,10 @@ export function CommonTextInput({
         className={`w-full p-3 border rounded-md focus:outline-none ${className}`}
         style={{
           color: inputColor,
-          borderColor: hasError ? errorColor : "#d1d5db",
+          borderColor: hasError ? errorColor : '#d1d5db',
           boxShadow:
-            isFocused && !hasError ? `0 0 0 2px ${focusColor}` : "none",
-          transition: "box-shadow 0.2s ease",
+            isFocused && !hasError ? `0 0 0 2px ${focusColor}` : 'none',
+          transition: 'box-shadow 0.2s ease',
         }}
       />
     </div>

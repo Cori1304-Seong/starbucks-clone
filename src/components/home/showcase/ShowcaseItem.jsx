@@ -1,7 +1,7 @@
-import React from "react";
-import { CommonText } from "../../common/customText";
+import React from 'react';
+import { CommonText } from '../../common/customText';
 
-const ShowcaseItem = ({ item, className = "" }) => {
+const ShowcaseItem = ({ item, className = '' }) => {
   return (
     <div className="flex flex-col mb-3">
       <div
@@ -11,7 +11,7 @@ const ShowcaseItem = ({ item, className = "" }) => {
           src={item.image}
           alt={item.title}
           className="w-full h-auto object-cover rounded-[10px]"
-          style={{ maxHeight: "190px" }}
+          style={{ maxHeight: '190px' }}
         />
       </div>
       <div className="">

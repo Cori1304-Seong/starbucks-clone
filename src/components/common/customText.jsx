@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 /*
 | Tailwind Class | 실제 크기 (기본 기준)   | 설명     |
@@ -20,17 +20,17 @@ import React from "react";
 
 export function CommonText({
   children,
-  fontSize = "text-base",
+  fontSize = 'text-base',
   bold = false,
   multiline = false,
-  className = "",
+  className = '',
 }) {
   return (
     <p
-      className={`font-sans ${fontSize} ${bold ? "font-bold" : "font-normal"} ${
+      className={`font-sans ${fontSize} ${bold ? 'font-bold' : 'font-normal'} ${
         multiline
-          ? "whitespace-normal break-words"
-          : "whitespace-nowrap overflow-hidden text-ellipsis"
+          ? 'whitespace-normal break-words'
+          : 'whitespace-nowrap overflow-hidden text-ellipsis'
       } ${className}`}
     >
       {children}

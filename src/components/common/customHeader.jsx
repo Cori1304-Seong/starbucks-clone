@@ -1,23 +1,23 @@
-import React from "react";
-import { IoChevronBack } from "react-icons/io5";
+import React from 'react';
+import { IoChevronBack } from 'react-icons/io5';
 
 export function CommonHeader({
   title,
-  height = "h-[46px]",
-  fontSize = "text-base",
+  height = 'h-[46px]',
+  fontSize = 'text-base',
   hasShadow = false,
-  bgColor = "",
-  borderBottomColor = "",
+  bgColor = '',
+  borderBottomColor = '',
   onBack,
-  className = "",
+  className = '',
 }) {
   return (
     <header
       className={`relative flex items-center justify-center px-3 ${height} ${className} ${
-        hasShadow ? "shadow-[0_2px_4px_-1px_rgba(0,0,0,0.1)]" : ""
+        hasShadow ? 'shadow-[0_2px_4px_-1px_rgba(0,0,0,0.1)]' : ''
       }`}
       style={{
-        backgroundColor: bgColor || "transparent",
+        backgroundColor: bgColor || 'transparent',
         borderBottom: borderBottomColor
           ? `1px solid ${borderBottomColor}`
           : undefined,
@@ -43,21 +43,21 @@ export function CommonHeader({
 
 export function ColumnHeader({
   title,
-  height = "h-[103px]",
-  fontSize = "text-4xl",
+  height = 'h-[103px]',
+  fontSize = 'text-4xl',
   hasShadow = false,
-  bgColor = "",
-  borderBottomColor = "",
+  bgColor = '',
+  borderBottomColor = '',
   onBack,
-  className = "",
+  className = '',
 }) {
   return (
     <header
       className={`px-3 py-3 ${height} ${className} ${
-        hasShadow ? "shadow-[0_2px_4px_-1px_rgba(0,0,0,0.1)]" : ""
+        hasShadow ? 'shadow-[0_2px_4px_-1px_rgba(0,0,0,0.1)]' : ''
       }`}
       style={{
-        backgroundColor: bgColor || "transparent",
+        backgroundColor: bgColor || 'transparent',
         borderBottom: borderBottomColor
           ? `1px solid ${borderBottomColor}`
           : undefined,

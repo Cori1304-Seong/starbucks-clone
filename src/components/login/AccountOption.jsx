@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 function AccountOptions({
   onFindAccountClick,
-  checkboxLabel = "아이디 저장",
-  findAccountText = "아이디/비밀번호 찾기",
-  className = "",
+  checkboxLabel = '아이디 저장',
+  findAccountText = '아이디/비밀번호 찾기',
+  className = '',
 }) {
   return (
     <div className={`flex justify-between items-center ${className}`}>

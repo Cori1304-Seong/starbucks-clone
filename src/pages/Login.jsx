@@ -1,16 +1,16 @@
-import { useNavigate } from "react-router-dom";
-import { CommonBtn } from "../components/common/customBtn";
-import CommonLayout from "../layouts/CommonLayout";
-import Greeting from "../components/login/Greeting";
-import { CommonTextInput } from "../components/common/TextInput";
-import { useState } from "react";
-import { ColumnHeader } from "../components/common/customHeader";
-import AccountOptions from "../components/login/AccountOption";
+import { useNavigate } from 'react-router-dom';
+import { CommonBtn } from '../components/common/customBtn';
+import CommonLayout from '../layouts/CommonLayout';
+import Greeting from '../components/login/Greeting';
+import { CommonTextInput } from '../components/common/TextInput';
+import { useState } from 'react';
+import { ColumnHeader } from '../components/common/customHeader';
+import AccountOptions from '../components/login/AccountOption';
 
 function Login() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <CommonLayout>
@@ -42,7 +42,7 @@ function Login() {
           />
           {/* 아이디 저장 & 아이디/비밀번호 찾기, TODO 있어야 할지 고민 */}
           <AccountOptions
-            onFindAccountClick={() => navigate("/find-account")}
+            onFindAccountClick={() => navigate('/find-account')}
           />
 
           <CommonBtn
@@ -58,7 +58,7 @@ function Login() {
             textColor="text-starbucks-green"
             borderColor="border-starbucks-green"
             fullWidth={true}
-            onClick={() => navigate("/signup")}
+            onClick={() => navigate('/signup')}
           />
         </form>
       </div>

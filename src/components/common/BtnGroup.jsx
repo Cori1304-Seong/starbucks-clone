@@ -1,13 +1,13 @@
 export function CommonBtnGroup({
-  direction = "row",
-  gap = "gap-5",
-  justify = "justify-center",
-  padding = "px-5",
-  margin = "mt-5",
-  className = "",
+  direction = 'row',
+  gap = 'gap-5',
+  justify = 'justify-center',
+  padding = 'px-5',
+  margin = 'mt-5',
+  className = '',
   children,
 }) {
-  const flexDirection = direction === "col" ? "flex-col" : "flex-row";
+  const flexDirection = direction === 'col' ? 'flex-col' : 'flex-row';
 
   return (
     <div

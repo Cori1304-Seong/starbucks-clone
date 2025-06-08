@@ -1,14 +1,14 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
-import Home from "./pages/Home";
-import Pay from "./pages/Pay";
-import Order from "./pages/Order";
-import Other from "./pages/Other";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Home from './pages/Home';
+import Pay from './pages/Pay';
+import Order from './pages/Order';
+import Other from './pages/Other';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
-import "./App.css";
+import './App.css';
 
 function App() {
   return (

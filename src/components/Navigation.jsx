@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   FaHome,
   FaMoneyBillWave,
@@ -7,18 +7,18 @@ import {
   FaEllipsisH,
   FaAngleLeft,
   FaAngleRight,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
-import "./styles/Navigation.css";
+import './styles/Navigation.css';
 
 const Navigation = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const navItems = [
-    { to: "/", icon: <FaHome />, label: "Home" },
-    { to: "/pay", icon: <FaMoneyBillWave />, label: "Pay" },
-    { to: "/order", icon: <FaCoffee />, label: "Order" },
-    { to: "/other", icon: <FaEllipsisH />, label: "Other" },
+    { to: '/', icon: <FaHome />, label: 'Home' },
+    { to: '/pay', icon: <FaMoneyBillWave />, label: 'Pay' },
+    { to: '/order', icon: <FaCoffee />, label: 'Order' },
+    { to: '/other', icon: <FaEllipsisH />, label: 'Other' },
   ];
 
   const toggleCollapse = () => {
@@ -27,7 +27,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className={`bottom-nav ${isCollapsed ? "collapsed" : ""}`}>
+      <nav className={`bottom-nav ${isCollapsed ? 'collapsed' : ''}`}>
         <div className="nav-logo">
           <h2>Starbucks</h2>
         </div>
@@ -38,7 +38,7 @@ const Navigation = () => {
               key={item.to}
               to={item.to}
               className={({ isActive }) =>
-                `nav-item ${isActive ? "active" : ""}`
+                `nav-item ${isActive ? 'active' : ''}`
               }
             >
               <span className="nav-icon">{item.icon}</span>
@@ -51,7 +51,7 @@ const Navigation = () => {
         <button
           className="collapse-btn"
           onClick={toggleCollapse}
-          aria-label={isCollapsed ? "Expand menu" : "Collapse menu"}
+          aria-label={isCollapsed ? 'Expand menu' : 'Collapse menu'}
         >
           {isCollapsed ? <FaAngleRight /> : <FaAngleLeft />}
         </button>

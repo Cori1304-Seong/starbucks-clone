@@ -1,10 +1,10 @@
-import { useNavigate } from "react-router-dom";
-import { CommonBtn } from "../../common/customBtn";
-import { CommonText } from "../../common/customText";
-import { CommonBtnGroup } from "../../common/BtnGroup";
+import { useNavigate } from 'react-router-dom';
+import { CommonBtn } from '../../common/customBtn';
+import { CommonText } from '../../common/customText';
+import { CommonBtnGroup } from '../../common/BtnGroup';
 
 //TODO 로그인시 보여질 컴포넌트 추가
-function AuthPanel({ className = "" }) {
+function AuthPanel({ className = '' }) {
   const navigate = useNavigate();
 
   return (
@@ -20,7 +20,7 @@ function AuthPanel({ className = "" }) {
           textColor="text-[#006241]"
           hoverOpacity="hover:opacity-90"
           fullWidth={true}
-          onClick={() => navigate("/login")}
+          onClick={() => navigate('/login')}
         />
 
         <CommonBtn
@@ -29,7 +29,7 @@ function AuthPanel({ className = "" }) {
           textColor="text-white"
           hoverOpacity="hover:opacity-90"
           fullWidth={true}
-          onClick={() => navigate("/signup")}
+          onClick={() => navigate('/signup')}
         />
       </CommonBtnGroup>
     </section>

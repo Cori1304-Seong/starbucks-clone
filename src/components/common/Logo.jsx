@@ -1,8 +1,8 @@
 // Logo.jsx
-import React from "react";
-import logo from "../../assets/logo.svg";
+import React from 'react';
+import logo from '../../assets/logo.svg';
 
-const Logo = ({ src = logo, alt = "Logo", className = "" }) => {
+const Logo = ({ src = logo, alt = 'Logo', className = '' }) => {
   return (
     <div
       className={`w-24 h-24 rounded-full flex items-center justify-center ${className}`}

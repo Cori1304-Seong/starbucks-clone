@@ -1,6 +1,6 @@
-import ShowcaseItem from "./ShowcaseItem";
+import ShowcaseItem from './ShowcaseItem';
 
-function Showcase({ carouselItems, title, className = "" }) {
+function Showcase({ carouselItems, title, className = '' }) {
   return (
     <section className={`px-5 ${className}`}>
       <h2 className="text-xl font-bold mb-2">{title}</h2>

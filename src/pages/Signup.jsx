@@ -1,16 +1,16 @@
-import { useNavigate } from "react-router-dom";
-import { CommonHeader } from "../components/common/customHeader";
-import CommonLayout from "../layouts/CommonLayout";
-import Logo from "../components/common/Logo";
-import { CommonTextInput } from "../components/common/TextInput";
-import { CommonBtn } from "../components/common/customBtn";
-import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import { CommonHeader } from '../components/common/customHeader';
+import CommonLayout from '../layouts/CommonLayout';
+import Logo from '../components/common/Logo';
+import { CommonTextInput } from '../components/common/TextInput';
+import { CommonBtn } from '../components/common/customBtn';
+import { useState } from 'react';
 
 function Signup() {
   const navigate = useNavigate();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <CommonLayout>

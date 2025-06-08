@@ -1,7 +1,7 @@
-import { CommonText } from "../common/customText";
-import Logo from "../common/Logo";
+import { CommonText } from '../common/customText';
+import Logo from '../common/Logo';
 
-function Greeting({ className = "" }) {
+function Greeting({ className = '' }) {
   return (
     <section className={`w-full ${className}`}>
       <Logo className="mb-4" />
