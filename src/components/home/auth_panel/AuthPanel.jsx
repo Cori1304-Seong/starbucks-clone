@@ -3,7 +3,8 @@ import { CommonBtn } from "../../common/customBtn";
 import { CommonText } from "../../common/customText";
 import { CommonBtnGroup } from "../../common/BtnGroup";
 
-function Greeting({ className = "" }) {
+//TODO 로그인시 보여질 컴포넌트 추가
+function AuthPanel({ className = "" }) {
   const navigate = useNavigate();
 
   return (
@@ -35,4 +36,4 @@ function Greeting({ className = "" }) {
   );
 }
 
-export default Greeting;
+export default AuthPanel;
