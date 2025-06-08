@@ -1,9 +1,9 @@
 import React from "react";
 
-const ShowcaseItem = ({ item }) => {
+const ShowcaseItem = ({ item, className = "" }) => {
   return (
     <div
-      className="relative w-full mb-4 pb-[60%] rounded-[10px] shadow-md bg-cover bg-center"
+      className={`relative w-full mb-4 pb-[60%] rounded-[10px] shadow-md bg-cover bg-center ${className}`}
       style={{ backgroundImage: `url(${item.image})` }}
     >
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent text-white">

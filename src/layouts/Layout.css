@@ -1,15 +1,15 @@
-/* Home Container */
-.home-container {
+/* Layout.css */
+.layout-container {
   max-width: 100%;
   margin: 0 auto;
   background-color: #f6f5ef;
   min-height: 100vh;
-  padding-bottom: 80px; /* Space for bottom navigation */
+  padding-bottom: 60px; /* Space for bottom navigation */
 }
 
 /* Responsive Adjustments */
 @media (min-width: 768px) {
-  .home-container {
+  .layout-container {
     max-width: 430px;
     margin: 0 auto;
     /* padding-inline: 10px; */

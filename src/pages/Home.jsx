@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Showcase from "../components/home/showcase/Showcase";
 import Greeting from "../components/home/greeting/Greeting";
 import { CommonHeader } from "../components/common/customHeader";
-
-import "./styles/Home.css";
+import CommonLayout from "../layouts/CommonLayout";
 
 const carouselItems = [
   {
@@ -25,14 +24,14 @@ const carouselItems = [
 
 function Home() {
   return (
-    <div className="home-container">
+    <CommonLayout>
       <CommonHeader title="" />
 
       <Greeting />
 
       <Showcase carouselItems={carouselItems} title="What's New" />
       <Showcase carouselItems={carouselItems} title="신규 이벤트" />
-    </div>
+    </CommonLayout>
   );
 }
 
