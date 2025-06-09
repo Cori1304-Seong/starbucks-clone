@@ -1,17 +1,29 @@
-import React from "react";
+import React from 'react';
+import { CommonText } from '../../common/customText';
 
-const ShowcaseItem = ({ item, className = "" }) => {
-  return (
-    <div
-      className={`relative w-full mb-4 pb-[60%] rounded-[10px] shadow-md bg-cover bg-center ${className}`}
-      style={{ backgroundImage: `url(${item.image})` }}
-    >
-      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent text-white">
-        <h3 className="m-0 mb-1 text-base">{item.title}</h3>
-        <p className="m-0 text-xs opacity-90">{item.subtitle}</p>
-      </div>
-    </div>
-  );
+const ShowcaseItem = ({ item, className = '' }) => {
+    return (
+        <div className="flex flex-col mb-3">
+            <div className={`w-full mb-2 rounded-[10px] shadow-md bg-white ${className}`}>
+                <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-auto object-cover rounded-[10px]"
+                    style={{ maxHeight: '190px' }}
+                />
+            </div>
+            <div className="">
+                <CommonText fontSize="text-base" bold>
+                    {item.title}
+                </CommonText>
+                <CommonText fontSize="text-xs" bold>
+                    {item.subtitle}
+                </CommonText>
+                {/* <h3 className="m-0 mb-1 text-base text-gray-900">{item.title}</h3>
+        <p className="m-0 text-xs opacity-90 text-gray-700">{item.subtitle}</p> */}
+            </div>
+        </div>
+    );
 };
 
 export default ShowcaseItem;
